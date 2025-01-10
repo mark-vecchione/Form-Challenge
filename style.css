@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%
+}
+
+
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.left-background {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+}
+
+.right-sections {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-overview, 
+.form-section, 
+.button-section {
+    flex: 1; 
+}
+
+.page-overview {
+    background-color: lightgray;
+}
+
+.form-section {
+    background-color: white;
+}
+
+.button-section {
+    background-color: lightgray;
+}
+
+form {
+    display: flex;
+}
+
+.form-leftside, .form-rightside {
+    flex: 1
+}
+
