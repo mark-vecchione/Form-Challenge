@@ -19,9 +19,11 @@ html, body {
 .left-background {
     flex: 1;
     display: flex;
-    align-items: center;
+    align-items: top;
     justify-content: center;
-    background-color: aqua;
+    background-image: url('https://images.unsplash.com/photo-1518837695005-2083093ee35b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080');
+    background-size: cover; 
+    background-position: center; 
 }
 
 .right-sections {
