@@ -4,11 +4,15 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Norse Bold'; /* Name for the font */
+    src: url('https://cdn.statically.io/gh/TheOdinProject/theodinproject/efdc2888072f409e687d31dc580595dbe4fe0ff4/app/assets/fonts/Norse-Bold.otf') format('opentype'); /* URL and font format */
+}
+
+/* Sectioning */
 html, body {
     height: 100%
 }
-
-
 
 .main-container {
     display: flex;
@@ -21,9 +25,10 @@ html, body {
     display: flex;
     align-items: top;
     justify-content: center;
-    background-image: url('https://images.unsplash.com/photo-1518837695005-2083093ee35b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080');
+    background-image: url('https://images.unsplash.com/photo-1735669356374-8ea7506cd1d2?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-size: cover; 
     background-position: center; 
+
 }
 
 .right-sections {
@@ -40,21 +45,83 @@ html, body {
 
 .page-overview {
     background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.overview {
+    padding: 10px;
+    font-size: 18px;
+    width: 80%;
 }
 
 .form-section {
     background-color: white;
 }
 
-.button-section {
-    background-color: lightgray;
+/* Logo */
+.logo {
+    font-family: "Norse Bold", sans-serif;
+    margin-top: 80px;
+    font-size: 64px;
+    color: white;    
 }
 
+.sub-logo {
+    width: 40px;
+    height: auto;
+    vertical-align: top;
+}
+
+
+/* Input Styles */
+input {
+    border: 1px solid #e5e7eb;
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
+/* Form Layout */
 form {
     display: flex;
+    gap: 20px;
+    margin: 10px;
 }
 
 .form-leftside, .form-rightside {
     flex: 1
 }
+
+/* Button Styles */
+
+.button-section {
+    background-color: lightgray;
+}
+
+button {
+    color: #596d48;
+    background: none;
+    border: 2px solid #596d48;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 20px;
+    margin-bottom: 5px;
+}
+
+button:hover {
+    background: #596d48;
+    color: white;
+}
+ .hasAccount {
+    margin: 20px;
+    margin-top: 0%;
+ }
+
+
 

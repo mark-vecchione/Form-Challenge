@@ -10,7 +10,14 @@
     <div class="main-container">
         <section class="left-background">
             <p class="logo">
-                <p class="sub-logo">
+                <span class="sub-logo">
+                    <img 
+                        src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" 
+                        alt="Odin Logo" 
+                        class="logo-image"
+                        style="width: 40px; height: auto; vertical-align: middle;"
+                    >
+                </span>
                 ODIN
                 </p>
             </p>
@@ -18,18 +25,18 @@
         <div class="right-sections">
             <section class="page-overview">
                 <p class="overview">
-                    This is not a real online service! You know you need something
+                    <strong>This is not a real online service! You know you need something
                     like this in your life to help you realize your deepest dreams. Sign up <em>now</em>
-                    to get started. 
+                    to get started.</strong> 
                 </p>
                 <p class="overview">
-                    You <em>know</em> you want to. 
+                    <strong>You <em>know</em> you want to.</strong> 
                 </p>
             </section>
             <section class="form-section">
+                <h1>Let's do this!</h1>
                 <form id="myForm" action = '/my-handling-form-page' method = "post">
                     <div class="form-leftside">
-                        <h1>Let's do this!</h1>
                         <p>
                             <label for="first-name">First Name</label>
                             <input type = "text" id ="first-name" name ="first_name"/>
@@ -65,7 +72,7 @@
                 <p class="button">
                     <button type="submit" form="myForm">Create Account</button>
                 </p>
-                <p>
+                <p class="hasAccount">
                     Already have an account?
                     <a href="/login">Log in</a>
                 </p>
